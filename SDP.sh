@@ -91,7 +91,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/lora" \
+        "${WORKSPACE}/ComfyUI/models/loras" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/controlnet" \
@@ -100,7 +100,7 @@ function provisioning_start() {
         "${WORKSPACE}/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/ComfyUI/models/esrgan" \
+        "${WORKSPACE}/ComfyUI/models/upscale_models" \
         "${ESRGAN_MODELS[@]}"
 	provisioning_get_models \
         "${WORKSPACE}/ComfyUI/models/annotators" \
