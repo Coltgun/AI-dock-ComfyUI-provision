@@ -88,25 +88,25 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_install_python_packages
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
+        "${WORKSPACE}/storage/ComfyUI/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/lora" \
+        "${WORKSPACE}/storage/ComfyUI/models/lora" \
         "${LORA_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/controlnet" \
+        "${WORKSPACE}/storage/ComfyUI/models/controlnet" \
         "${CONTROLNET_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/vae" \
+        "${WORKSPACE}/storage/ComfyUI/models/vae" \
         "${VAE_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
+        "${WORKSPACE}/storage/ComfyUI/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
 	provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/annotators" \
+        "${WORKSPACE}/storage/ComfyUI/models/annotators" \
         "${ANNOTATOR_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
+        "${WORKSPACE}/storage/ComfyUI/models/clip_vision" \
         "${CLIP_VISION_MODELS[@]}"
     provisioning_print_end
 }
